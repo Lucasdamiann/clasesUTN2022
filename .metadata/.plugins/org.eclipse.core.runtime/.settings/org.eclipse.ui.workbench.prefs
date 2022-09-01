@@ -1,0 +1,21 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.cdt.ui.presentation\tTorg.eclipse.cdt.ui.CEditor.presentation\tTorg.eclipse.linuxtools.changelog.editor.presentation\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.egit.ui.GitTheme\tTorg.eclipse.linuxtools.rpm.editor.presentation\tTorg.eclipse.wst.sse.ui\tTorg.eclipse.mylyn.tasks.ui.presentation\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer\tTorg.eclipse.tracecompass.tmf.ui.theme.category\tTorg.eclipse.linuxtools.valgrind.editor.presentation\tTorg.eclipse.ui.presentation.default\tTorg.eclipse.mylyn.wikitext.ui.presentation
+ColorsAndFontsPreferencePage.selectedElement=CCONTENT_ASSIST_BACKGROUND_COLOR
+eclipse.preferences.version=1
+org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_TAB_BG_END=41,41,41
+org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=43,44,45
+org.eclipse.ui.ide.systemDefault.org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR=221,221,221
+org.eclipse.ui.r30.org.eclipse.ui.showkeys.backgroundColor=66,66,66
+org.eclipse.ui.r30.org.eclipse.ui.workbench.ACTIVE_TAB_BG_END=41,41,41
+org.eclipse.ui.r30.org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=43,44,45
+org.eclipse.ui.r30.org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR=221,221,221
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=41,41,41
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=43,44,45
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=204,204,204
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_END=41,41,41
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=43,44,45
+org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR=221,221,221
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_END=49,53,56
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=59,64,66
+org.eclipse.ui.workbench.INACTIVE_TAB_TEXT_COLOR=187,187,187
+resourcetypes=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<editors version\="3.1">\r\n<info extension\="gcno" name\="*">\r\n<editor id\="org.eclipse.linuxtools.gcov.editor"/>\r\n<defaultEditor id\="org.eclipse.linuxtools.gcov.editor"/>\r\n</info>\n<info extension\="pri" name\="*">\r\n<editor id\="org.eclipse.cdt.qt.ui.QtProjectFileEditor"/>\r\n<defaultEditor id\="org.eclipse.cdt.qt.ui.QtProjectFileEditor"/>\r\n</info>\n<info extension\="qml" name\="*">\r\n<editor id\="org.eclipse.cdt.qt.ui.QMLEditor"/>\r\n<defaultEditor id\="org.eclipse.cdt.qt.ui.QMLEditor"/>\r\n</info>\n<info extension\="html" name\="*">\r\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\r\n</info>\n<info extension\="out" name\="gmon">\r\n<editor id\="org.eclipse.linuxtools.gprof.editor.single"/>\r\n<defaultEditor id\="org.eclipse.linuxtools.gprof.editor.single"/>\r\n</info>\n<info extension\="sum" name\="gmon">\r\n<editor id\="org.eclipse.linuxtools.gprof.editor.single"/>\r\n<defaultEditor id\="org.eclipse.linuxtools.gprof.editor.single"/>\r\n</info>\n<info extension\="pro" name\="*">\r\n<editor id\="org.eclipse.cdt.qt.ui.QtProjectFileEditor"/>\r\n<defaultEditor id\="org.eclipse.cdt.qt.ui.QtProjectFileEditor"/>\r\n</info>\n<info extension\="shtml" name\="*">\r\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\r\n</info>\n<info extension\="setup" name\="*">\r\n<editor id\="org.eclipse.oomph.setup.presentation.SetupEditorID"/>\r\n</info>\n<info extension\="workingsets" name\="*">\r\n<editor id\="org.eclipse.oomph.workingsets.presentation.WorkingSetsEditorID"/>\r\n</info>\n<info extension\="gcda" name\="*">\r\n<editor id\="org.eclipse.linuxtools.gcov.editor"/>\r\n<defaultEditor id\="org.eclipse.linuxtools.gcov.editor"/>\r\n</info>\n<info extension\="htm" name\="*">\r\n<editor id\="org.eclipse.ui.browser.editorSupport"/>\r\n</info>\r\n</editors>

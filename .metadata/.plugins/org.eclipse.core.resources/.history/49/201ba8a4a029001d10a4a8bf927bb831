@@ -1,0 +1,96 @@
+/*
+ a) La cantidad de personas con estado  civil"viudo" de más de 60 años.
+ b) el número de cliente y edad de la mujer soltera más joven.
+ c) cuánto sale el viaje total sin descuento.
+ d) si hay más del 50% de los pasajeros que tiene más de 60 años ,
+ el precio final tiene un descuento del 25%, que solo mostramos si corresponde.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	setbuf(stdout, NULL);
+
+	int cantPersonas;
+	int precio = 600;
+	int edad;
+	char estadoCivil;
+	int temperatura;
+	char genero;
+	int numeroCliente;
+	int numeroClMasJoven;
+	int edadMujerJoven = 0;
+	int viajeTotal = 0;
+	int flagMujerJoven = 0;
+	int cuentaViudos = 0;
+	int cantMayores60 = 0;
+	int promedio;
+
+	printf("#####################################\n"
+			"##    TRANSPORTES NUEVEDELDOCE     ##\n"
+			"#####################################\n");
+
+	printf("-=El precio del viaje a Mar del Plata es de %d=-\n", precio);
+	printf("\n¿Cuantos personas van a viajar?(no mas de 100): ");
+	scanf("%d", &cantPersonas);
+	while (cantPersonas > 100) {
+		printf("\nIngrese un valor entre 1 y 100 por favor\n");
+		scanf("%d", &cantPersonas);
+		viajeTotal *= cantPersonas;
+	}
+	printf("Ingrese su numero de cliente: ");
+	scanf("%d", &numeroCliente);
+	printf(
+			"\nIngrese su estado civil ('S' para soltero/a, 'C' para casado/a, 'V' para viudo/a: ");
+	fflush(stdin);
+	scanf("%c", &estadoCivil);
+	while ((estadoCivil != 'C') || (estadoCivil != 'S') || (estadoCivil != 'V')) {
+		printf("\nIngrese uno de los estados civiles informados (C,V,S): ");
+		fflush(stdin);
+		scanf("%c", &estadoCivil);
+
+	}
+	printf("\nIngrese su edad (debe ser mayor de 17 anios): ");
+	scanf("%d", &edad);
+	while (edad < 18) {
+		printf("Debe ser mayor de edad\n");
+		printf("Ingrese una edad valida: ");
+		scanf("%d", &edad);
+		if (edad > 60) {
+			cantMayores60++;
+			if (estadoCivil == 'V') {
+				cuentaViudos++;
+			}
+
+		}
+		printf("\nIngrese su temperatura corporal: ");
+		scanf("%d", &temperatura);
+		while (temperatura > 37) {
+			printf(
+					"\nEsa temperatura es muy elevada, deberia visitar a un doctor\n");
+			printf("Ingrese una temperatura menor a 37°: ");
+			scanf("%d", &temperatura);
+		}
+		printf("\nIngrese su genero:");
+		fflush(stdin);
+		scanf("%c", &genero);
+		while (genero != 'M' || genero != 'F' || genero != 'O') {
+			printf("Ingrese un genero valido (M,F,O)");
+			fflush(stdin);
+			scanf("%c", &genero);
+			if ((estadoCivil == 'S' && genero == 'F' && edadMujerJoven > edad)
+					|| flagMujerJoven == 0) {
+				edadMujerJoven = edad;
+				numeroClienteMasJoven = numeroCliente;
+				flagMujerJoven = 1;
+			}
+		}
+		promedio = cantPersonas / 2;
+		if (promedio < cantMayores60) {
+			printf("ss");
+		}
+
+		return EXIT_SUCCESS;
+	}
+}

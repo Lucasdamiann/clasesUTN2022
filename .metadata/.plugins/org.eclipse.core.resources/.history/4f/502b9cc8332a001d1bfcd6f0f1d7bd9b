@@ -1,0 +1,121 @@
+/*
+ a) La cantidad de personas con estado  civil"viudo" de más de 60 años.
+ b) el número de cliente y edad de la mujer soltera más joven.
+ c) cuánto sale el viaje total sin descuento.
+ d) si hay más del 50% de los pasajeros que tiene más de 60 años ,
+ el precio final tiene un descuento del 25%, que solo mostramos si corresponde.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	setbuf(stdout, NULL);
+
+	int cantPersonas;
+	int precio = 600;
+	int edad;
+	char estadoCivil;
+	int temperatura;
+	char genero;
+	int numeroCliente;
+	int numeroCteMasJoven;
+	int edadMujerJoven = 0;
+	int precioTotal = 0;
+	int flagMujerJoven = 0;
+	int cuentaViudos = 0;
+	int cantMayores60 = 0;
+	int mitad;
+	int precioConDescuento;
+
+	printf("#####################################\n"
+			"##    TRANSPORTES NUEVEDELDOCE     ##\n"
+			"#####################################\n");
+
+	printf("-=El precio del viaje a Mar del Plata es de %d=-\n", precio);
+	printf("\n¿Cuantos personas van a viajar?(no mas de 100): ");
+	scanf("%d", &cantPersonas);
+	do {
+		printf("\nIngrese un valor entre 1 y 100 por favor\n");
+		scanf("%d", &cantPersonas);
+	} while ((cantPersonas > 100)
+			&& (cantPersonas != 0 || cantPersonas != 1 || cantPersonas != 2
+					|| cantPersonas != 3 || cantPersonas != 4
+					|| cantPersonas != 5 || cantPersonas != 6
+					|| cantPersonas != 7 || cantPersonas != 8
+					|| cantPersonas != 9));
+	precioTotal = cantPersonas * precio;
+	printf("Ingrese su numero de cliente: ");
+	scanf("%d", &numeroCliente);
+	do {
+		printf("Ingrese solo caracteres numericos: ");
+		scanf("%d", &numeroCliente);
+	} while (numeroCliente != 0 || numeroCliente != 1 || numeroCliente != 2
+			|| numeroCliente != 3 || numeroCliente != 4 || numeroCliente != 5
+			|| numeroCliente != 6 || numeroCliente != 7 || numeroCliente != 8
+			|| numeroCliente != 9);
+
+	printf(
+			"\nIngrese su estado civil ('S' para soltero/a, 'C' para casado/a, 'V' para viudo/a: ");
+	do {
+		printf("\nIngrese solo los caracteres indicados(S,C,V): ");
+		fflush(stdin);
+		scanf("%c", &estadoCivil);
+	} while ((estadoCivil != 'C' || estadoCivil != 'c')
+			|| (estadoCivil != 'S' || estadoCivil != 's')
+			|| (estadoCivil != 'V' || estadoCivil != 'v'));
+
+	printf("\nIngrese su edad: ");
+	scanf("%d", &edad);
+	do {
+		printf("Debe ser mayor de edad\n");
+		printf("Ingrese una edad valida: ");
+		scanf("%d", &edad);
+		if (edad > 60) {
+			cantMayores60++;
+			if (estadoCivil == 'V') {
+				cuentaViudos++;
+			}
+		}
+	} while (edad < 18);
+
+	printf("\nIngrese su temperatura corporal: ");
+	scanf("%d", &temperatura);
+do {
+	printf(
+			"\nEsa temperatura es muy elevada, deberia visitar a un doctor\n");
+	printf("Ingrese una temperatura menor a 37°: ");
+	scanf("%d", &temperatura);
+}
+while (temperatura > 37) {
+
+	printf("\nIngrese su genero:");
+	fflush(stdin);
+	scanf("%c", &genero);
+	while (genero != 'M' || genero != 'F' || genero != 'O') {
+		printf("Ingrese un genero valido (M,F,O)");
+		fflush(stdin);
+		scanf("%c", &genero);
+		if ((estadoCivil == 'S' && genero == 'F' && edadMujerJoven > edad)
+				|| flagMujerJoven == 0) {
+			edadMujerJoven = edad;
+			numeroCteMasJoven = numeroCliente;
+			flagMujerJoven = 1;
+		}
+	}
+
+	printf("La cantidad de personas viudas de mas de 60 anios es: %d",
+			cuentaViudos);
+	printf(
+			"El numero de cliente y edad de la mujer mas joven es: Num.Cte %d, Edad %d",
+			numeroCteMasJoven, edadMujerJoven);
+	printf("El viaje total tiene un valor de: %d", precioTotal);
+	mitad = cantPersonas / 2;
+	if (mitad < cantMayores60) {
+
+		precioConDescuento = precioTotal - (precioTotal * 0.25);
+		printf("El precio final con descuento es: $ %d", precioConDescuento);
+	}
+	return EXIT_SUCCESS;
+}
+}
