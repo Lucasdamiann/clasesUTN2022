@@ -8,7 +8,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 int main() {
 	setbuf(stdout, NULL);
@@ -52,8 +51,9 @@ int main() {
 		printf("\n-Ingrese solo los caracteres indicados: ");
 		fflush(stdin);
 		scanf("%c", &estadoCivil);
-		estadoCivil=toupper(estadoCivil);
-	} while ((estadoCivil != 'C') || (estadoCivil != 'S') || (estadoCivil != 'V' ) );
+	} while ((estadoCivil != 'C') /*|| (estadoCivil != 'c') ||
+			 (estadoCivil != 'S') || (estadoCivil != 's') ||
+			 (estadoCivil != 'V') || (estadoCivil != 'v') */);
 
 	printf("\nEdad: ");
 	do {
@@ -85,7 +85,6 @@ int main() {
 		printf("\n-Ingrese un genero valido (M,F,O)");
 		fflush(stdin);
 		scanf("%c", &genero);
-		genero=toupper(genero);
 	} while (genero != 'M' || genero != 'm' || genero != 'F' || genero != 'f'
 			|| genero != 'O' || genero != 'o');
 	if (((estadoCivil == 'S' || estadoCivil == 's')

@@ -8,7 +8,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 int main() {
 	setbuf(stdout, NULL);
@@ -53,7 +52,7 @@ int main() {
 		fflush(stdin);
 		scanf("%c", &estadoCivil);
 		estadoCivil=toupper(estadoCivil);
-	} while ((estadoCivil != 'C') || (estadoCivil != 'S') || (estadoCivil != 'V' ) );
+	} while (estadoCivil != 'C' || estadoCivil != 'S' || estadoCivil != 'V' );
 
 	printf("\nEdad: ");
 	do {
