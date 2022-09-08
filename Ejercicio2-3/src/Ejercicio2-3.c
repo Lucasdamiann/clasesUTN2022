@@ -53,7 +53,7 @@ int main() {
 		fflush(stdin);
 		scanf("%c", &estadoCivil);
 		estadoCivil=toupper(estadoCivil);
-	} while ((estadoCivil != 'C') || (estadoCivil != 'S') || (estadoCivil != 'V' ) );
+	} while ((estadoCivil != 'C') && (estadoCivil != 'S') && (estadoCivil != 'V' ));
 
 	printf("\nEdad: ");
 	do {
@@ -65,7 +65,7 @@ int main() {
 				cuentaViudos++;
 			}
 		}
-	} while (edad < 18 && edad>120);
+	} while (edad < 18 || edad>120);
 	printf("\nTemperatura corporal: ");
 	do {
 		printf("\n-Ingrese su temperatura (Ej. 36.7): ");
@@ -86,8 +86,7 @@ int main() {
 		fflush(stdin);
 		scanf("%c", &genero);
 		genero=toupper(genero);
-	} while (genero != 'M' || genero != 'm' || genero != 'F' || genero != 'f'
-			|| genero != 'O' || genero != 'o');
+	} while (genero != 'M' &&  genero != 'F' && genero != 'O');
 	if (((estadoCivil == 'S' || estadoCivil == 's')
 			&& (genero == 'F' || genero != 'f') && edadMujerJoven > edad)
 			|| flagMujerJoven == 0) {

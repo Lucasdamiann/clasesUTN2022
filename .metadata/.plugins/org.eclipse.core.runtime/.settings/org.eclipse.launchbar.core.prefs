@@ -1,8 +1,14 @@
 LaunchTargetManager/configs/Ejercicio2-3.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Ejercicio2-4.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Ejercicio3-1.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Ejercicio3-2.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Ejercicio3-3.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Ejercicio3-4.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/configs/Ejercicio4-1.exe=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:Ejercicio2-3.exe
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Ejercicio2-4.exe,org.eclipse.launchbar.core.descriptorType.default\:Ejercicio3-1.exe,org.eclipse.launchbar.core.descriptorType.default\:Ejercicio3-2.exe,org.eclipse.launchbar.core.descriptorType.default\:Ejercicio3-3.exe,org.eclipse.launchbar.core.descriptorType.default\:Ejercicio3-4.exe,org.eclipse.launchbar.core.descriptorType.default\:Ejercicio4-1.exe,org.eclipse.launchbar.core.descriptorType.default\:Ejercicio2-3.exe
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Ejercicio2-3.exe/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:Ejercicio2-3.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
