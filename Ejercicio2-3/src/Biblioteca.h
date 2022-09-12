@@ -8,6 +8,5 @@
 #ifndef BIBLIOTECA_H_
 #define BIBLIOTECA_H_
 
-
-
+int pedirNumero();
 #endif /* BIBLIOTECA_H_ */

@@ -1,8 +1,13 @@
-/*
- * Biblioteca.c
+/* brief Pedir que se ingrese un numero
  *
- *  Created on: 31 ago. 2022
- *      Author: Lucasdamiann
+ *
  */
+#include "Biblioteca.h"
+int pedirNumero(){
+    int numero;
 
+    printf("Ingrese un numero: ");
+    scanf("%d", &numero);
 
+    return numero;
+}

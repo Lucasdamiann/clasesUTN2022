@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int returnInt();
+
 int main() {
 	setbuf(stdout, NULL);
 	int recibido;
@@ -11,6 +12,7 @@ int main() {
 	printf("El factorial de %d es %d",recibido,resultado);
 	return EXIT_SUCCESS;
 }
+
 int returnInt()
 {	int retorno=-1;
 	int numeroRetornado;

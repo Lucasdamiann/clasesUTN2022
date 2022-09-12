@@ -1,2 +1,15 @@
-21:30:44 **** Clean-only build of configuration Debug for project Ejercicio3-5 ****
-rm -rf Ejercicio3-5.exe src/Ejercicio3-5.o src/Ejercicio3-5.d 
+21:35:12 **** Incremental Build of configuration Debug for project Ejercicio5-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio5-1.o" "..\\src\\Ejercicio5-1.c" 
+In file included from ..\src\Ejercicio5-1.c:5:
+..\src\utn.h:27:12: warning: 'getInt' declared 'static' but never defined [-Wunused-function]
+   27 | static int getInt(int *pResultado);
+      |            ^~~~~~
+..\src\utn.h:36:12: warning: 'myGets' declared 'static' but never defined [-Wunused-function]
+   36 | static int myGets(char *cadena, int longitud);
+      |            ^~~~~~
+..\src\utn.h:43:12: warning: 'esNumerica' declared 'static' but never defined [-Wunused-function]
+   43 | static int esNumerica(char *cadena);
+      |            ^~~~~~~~~~
+gcc -o Ejercicio5-1.exe "src\\Ejercicio5-1.o" "src\\utn.o" 
+Info: Nothing to build for Ejercicio5-1
